@@ -66,7 +66,7 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: var(--grey-100);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
@@ -253,8 +253,92 @@ ul {
   margin: 0 auto;
   margin-top: -1rem;
 }
-/* add gold color to css vars */
 /*
 =============== 
 Questions
 ===============
+*/
+.questions{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+ 
+}
+
+.questions .title{
+  color: var(--gold);
+  font-family:cursive;
+  margin-bottom: 3rem;
+}
+
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--fixed-width);
+}
+
+.question{
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 1.5rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.question-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question-title p{
+  margin: 0;
+  max-width:23rem;
+  line-height: 2;
+  letter-spacing: var(--letterSpacing);
+  color: var(--grey-600);
+}
+
+.question-btn{
+  cursor: pointer;
+  background: transparent;
+  border-color: var(--gold);
+  font-size: 1.5rem;
+  color: var(--gold);
+  transition: var(--transition);
+}
+
+.question-btn:hover{
+  transform: rotate(90deg);
+}
+.question-text {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+  margin: 0;
+  color: var(--grey-500);
+}
+
+
+/* hiding our text */
+
+.question-text{
+  display: none;
+}
+
+.minus-icon{
+  display: none;
+}
+
+/* in our JavaScript, if the class show text is present we will add the following styles to the question text div/class */
+.show-text .question-text{
+display: block;
+}
+.show-text .minus-icon{
+  display: inline;
+}
+.show-text .plus-icon{
+  display: none;
+}

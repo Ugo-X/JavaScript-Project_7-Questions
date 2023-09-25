@@ -22,3 +22,14 @@
 //     question.classList.toggle('show-text');
 //   });
 // });
+
+const btns = document.querySelectorAll('.question-btn')
+const questionText = document.querySelector('.question-text')
+const question = document.querySelector('.service')
+
+
+btns.forEach(function(btn){
+  btn.addEventListener('click', function(evt){
+    question = evt.currentTarget.
+  })
+})
